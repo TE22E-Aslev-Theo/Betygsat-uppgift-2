@@ -1,10 +1,10 @@
 body{
     user-select: none;
     margin:0px;
-    width: 100vw;
+    overflow: hidden;
 }
 nav{
-    width: fit-content;
+    width: 69.01vw;
     display: flex;
     flex-direction: row;
     column-gap: 4vw;
@@ -19,8 +19,9 @@ nav button{
     height: 7.6861vh;
     background-color: rgb(0, 177, 177);
     box-shadow: inset 2px 6px 10px rgba(255, 255, 255, 0.250), inset -2px -6px 10px rgba(0, 0, 0, 0.250), 0px 4px 3px rgba(0, 0, 0,0.5 );
-
+    font-size: x-large;
 }
+
 #pressedbutton{
     box-shadow: inset 1px 3px 10px rgba(255, 255, 255, 0.250), inset -1px -3px 10px rgba(0, 0, 0, 0.250);
 }
@@ -29,8 +30,70 @@ header{
     flex-direction: row;
     background-color: rgb(9, 223, 253);
     height: 13.426vh;
+    width: 30.99;
 }
 #titleimg{
     width: 31vw;
     height: 13.4vh;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh;
+    width: 98vw;
+    height: 68.88vh;
+}
+article{
+    border: 0px solid transparent;
+    border-radius: 30px;
+    background-color: grey;
+    width: 30vw;
+    height: 32vh;
+    text-align: center;
+}
+
+article h3{
+
+    margin-top: auto;
+    margin-right: 2vw;
+}
+
+main img{
+    border: 0px solid transparent;
+    border-radius: 20px; 
+    object-fit: cover;
+    background-color: white;
+    margin-top: 5px;
+    width: 25vw;
+    height: 26vh;
+}
+.valknappar{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 3vh;
+    margin-top: 1vh;
+}
+#legtillegg{
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+#legtillappelsin{
+    margin-right: 0.5vw;
+    margin-left: 3vw;
+}
+#legtillmajs{
+    margin-left: 3vw;
+}
+#legtillfläsk{
+    margin-left: 3vw;
+    margin-right: 8vw;
+}
+#legtillsalad{
+    margin-left: 3vw;
+    margin-right: 8vw;
+}
+#legtillbakmargarin{
+    margin-left: 3vw;
 }
