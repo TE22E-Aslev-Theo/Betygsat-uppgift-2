@@ -12,35 +12,44 @@
         <nav>
             <button >Hem</button>
             <button id="pressedbutton">Butik</button>
-            <a href="index3.html"><button>Kassa</button></a>
+            <button onclick="kassadrop()">Kassa</button>
         </nav>
     </header>
+    <div id="dropdownkassa">
+        <h6>Ägg i tolvpack: </h6>
+        <h6>Appelsin: </h6>
+        <h6>Majs: </h6>
+        <h6>Fläsk: </h6>
+        <h6>salad: </h6>
+        <h6>bakmargarin: </h6>
+        <h6 id="totalcost">Total:</h6>
+    </div>
     <main>
 
         <article>
             <img class="bild" src="/Bilder/äggi12pack19.90.webp" alt="ägg i 12 pack för endast 19.90kr/kg">
             <div class="valknappar">    
-                <button id="legtillegg">Lägg till</button>
+                <button id="legtillegg" onclick="legtillegg()">Lägg till</button>
                 <h3>Ägg i 12 pack</h3>
                 <button>+</button>
-                <div>0</div>
+                <div id="egg">0</div>
                 <button>-</button>
             </div>
         </article>
         <article>
             <img class="bild" src="/Bilder/Appelsin2099krkg.webp" alt="appelsin 20.99kr/kg">
             <div class="valknappar">    
-                <button id="legtillappelsin">Lägg till</button>
+                <button id="legtillappelsin" onclick="legtillappelsin()">Lägg till</button>
                 <h3>Apelsiner kilo pris</h3>
                 <button>+</button>
-                <div>0</div>
+                <div id="appelsin">0</div>
                 <button>-</button>
             </div>
         </article>
         <article>
             <img class="bild" src="/Bilder/majs.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
-                <button id="legtillmajs">Lägg till</button>
+                <button id="legtillmajs" onclick="legtillmajs()">Lägg till</button>
                 <h3>Majs </h3>
                 <button>+</button>
                 <div>0</div>
@@ -50,7 +59,7 @@
         <article>
             <img class="bild" src="/Bilder/fläsk.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
-                <button id="legtillfläsk">Lägg till</button>
+                <button id="legtillfläsk" onclick="legtillflesk()">Lägg till</button>
                 <h3>Fläsk</h3>
                 <button>+</button>
                 <div>0</div>
@@ -60,7 +69,7 @@
         <article>
             <img class="bild" src="/Bilder/salad.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
-                <button id="legtillsalad">Lägg till</button>
+                <button id="legtillsalad" onclick="legtillsalad()">Lägg till</button>
                 <h3>Salad</h3>
                 <button>+</button>
                 <div>0</div>
@@ -70,7 +79,7 @@
         <article>
             <img class="bild" src="/Bilder/bakmargari (1).webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
-                <button id="legtillbakmargarin">Lägg till</button>
+                <button id="legtillbakmargarin" onclick="legtillbm()">Lägg till</button>
                 <h3>Bakmargarin</h3>
                 <button>+</button>
                 <div>0</div>
