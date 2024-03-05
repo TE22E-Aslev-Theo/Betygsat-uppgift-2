@@ -104,4 +104,4 @@ mermargarin = () =>{
 mindremargarin = () =>{
     document.getElementById("bakmargarin").textContent = 
     Number(document.getElementById("bakmargarin").textContent) - 1;
-}
+} 
