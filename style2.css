@@ -1,10 +1,15 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     user-select: none;
     margin:0px;
-    overflow: hidden;
+    width: 100vw;
+    overflow-x: hidden;
 }
 nav{
-    width: 69.01vw;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     column-gap: 4vw;
@@ -69,18 +74,21 @@ main img{
     height: 26vh;
 }
 .valknappar{
+    text-align: center;
     display: flex;
     flex-direction: row;
     gap: 1vw;
     height: 3vh;
-    margin-top: 1vh;
+    margin-top: 0.5Svh;
+    border: 2px solid white;
+    background-color: white;
 }
 #legtillegg{
-    margin-right: 3vw;
+    
     margin-left: 3vw;
 }
 #legtillappelsin{
-    margin-right: 0.5vw;
+    
     margin-left: 3vw;
 }
 #legtillmajs{
@@ -88,12 +96,50 @@ main img{
 }
 #legtillfläsk{
     margin-left: 3vw;
-    margin-right: 8vw;
+    
 }
 #legtillsalad{
     margin-left: 3vw;
-    margin-right: 8vw;
+    
 }
 #legtillbakmargarin{
     margin-left: 3vw;
+    
+}
+#facebook{
+    margin-top: 0.5vh;
+    width: 60px;
+    height: 60px;
+    border: 0px,solid, transparent;
+    border-radius: 50%;
+    margin-right: 5vw;
+}
+#instagram{
+    margin-top: 0.5vh;
+    width: 60px;
+    height: 60px;
+    border: 0px,solid, transparent;
+    border-radius: 50%;
+}
+#twitter{
+    margin-top: 0.5vh;
+    width: 60px;
+    height: 60px;
+    border: 0px,solid, transparent;
+    border-radius: 50%;
+    margin-left: 5vw;
+}
+footer{
+    text-align: center;
+    background-color: rgb(197, 252, 255);
+    width: 100vw;
+    height: 13.5vh;
+}
+
+.copyright{
+    border: 0px solid transparent;
+    background-color: aqua;
+}
+h5{
+    font-size: 1vw;
 }
