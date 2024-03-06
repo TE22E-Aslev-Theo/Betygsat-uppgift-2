@@ -23,6 +23,7 @@
         <h6 id="antalsalad">Antal salad: 0</h6>
         <h6 id="antalbakmargarin">Antal bakmargarin: 0kg</h6>
         <h6 id="totalcost">Total:</h6>
+        <button onclick="remove()">Remove all</button>
     </div>
     <main>
 
@@ -30,7 +31,7 @@
             <img class="bild" src="/Bilder/äggi12pack19.90.webp" alt="ägg i 12 pack för endast 19.90kr/kg">
             <div class="valknappar">    
                 <button id="legtillegg" onclick="legtillegg()">Lägg till</button>
-                <h3>Ägg i 12 pack</h3>
+                <a href="https://handla.ica.se/produkt/1455334"><h3>Ägg i 12 pack</h3></a>
                 <button onclick="meregg()">+</button>
                 <div id="egg">0</div>
                 <button onclick="mindreegg()">-</button>
@@ -40,7 +41,7 @@
             <img class="bild" src="/Bilder/Appelsin2099krkg.webp" alt="appelsin 20.99kr/kg">
             <div class="valknappar">    
                 <button id="legtillappelsin" onclick="legtillappelsin()">Lägg till</button>
-                <h3>Apelsiner kilo pris</h3>
+                <a href="https://www.arstiderna.com/jordens-basta/frukt/citrusfrukter/apelsiner"><h3 id="h3a">Apelsiner kilo pris</h3></a>
                 <button onclick="merappelsin()">+</button>
                 <div id="appelsin">0</div>
                 <button onclick="mindreappelsin()">-</button>
@@ -50,7 +51,7 @@
             <img class="bild" src="/Bilder/majs.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
                 <button id="legtillmajs" onclick="legtillmajs()">Lägg till</button>
-                <h3>Majs </h3>
+                <a href="https://handla.ica.se/produkt/2067565"><h3>Majs </h3></a>
                 <button onclick="mermajs()">+</button>
                 <div id="majs">0</div>
                 <button onclick="mindremajs()">-</button>
@@ -60,7 +61,7 @@
             <img class="bild" src="/Bilder/fläsk.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
                 <button id="legtillfläsk" onclick="legtillflesk()">Lägg till</button>
-                <h3>Fläsk</h3>
+                <a href="https://handla.ica.se/produkt/1371698"><h3>Fläsk</h3></a>
                 <button onclick="merflesk()">+</button>
                 <div id="fläsk">0</div>
                 <button onclick="mindreflesk()">-</button>
@@ -70,7 +71,7 @@
             <img class="bild" src="/Bilder/salad.webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
                 <button id="legtillsalad" onclick="legtillsalad()">Lägg till</button>
-                <h3>Salad</h3>
+                <a href="https://www.coop.se/handla/varor/frukt-gronsaker/gronsaker/sallad-groddar/isbergsallat-2317406100004"><h3>Salad</h3></a>
                 <button onclick="mersalad()">+</button>
                 <div id="salad">0</div>
                 <button onclick="mindresalad()">-</button>
@@ -80,7 +81,7 @@
             <img class="bild" src="/Bilder/bakmargari (1).webp" alt="ägg i 12 pack för endast 19:90">
             <div class="valknappar">    
                 <button id="legtillbakmargarin" onclick="legtillbm()">Lägg till</button>
-                <h3>Bakmargarin</h3>
+                <a href="https://handla.ica.se/produkt/1309527"><h3>Bakmargarin</h3></a>
                 <button onclick="mermargarin()">+</button>
                 <div id="bakmargarin">0</div>
                 <button onclick="mindremargarin()">-</button>
@@ -95,10 +96,11 @@
             
             <img id="twitter" src="/Bilder/124021.webp" alt="twitter">
         </div>
-    </footer>
-    <div class="copyright">
+        <div class="copyright">
         <h5>Copyright ©2024. KöphemAB Stockholm, Sverige. All Rights Reserved</h5>
-    </div>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

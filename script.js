@@ -1,11 +1,9 @@
-
-egg = 0;
-salad = 0;
-flesk = 0;
-majs = 0;
-margarin = 0;
-appelsin = 0;
-
+let egg = 0;
+let salad = 0;
+let flesk = 0;
+let majs = 0;
+let margarin = 0;
+let appelsin = 0;
 function uppdatekassa(){
     document.getElementById("totalcost").textContent = 'Total: ' + ((egg * 19.9) + 
     (appelsin *20.9)+ 
@@ -36,8 +34,7 @@ legtillegg = () => {
     let v = document.getElementById("egg").textContent;
     egg += Number(v);
     uppdatekassa()
-    uppdateantal()
-    
+    uppdateantal()   
 }
 legtillappelsin = () => {
     let v = document.getElementById("appelsin").textContent;
@@ -120,3 +117,13 @@ mindremargarin = () =>{
     document.getElementById("bakmargarin").textContent = 
     Number(document.getElementById("bakmargarin").textContent) - 1;
 } 
+remove = () => {
+    egg = 0;
+    salad = 0;
+    flesk = 0;
+    majs = 0;
+    margarin = 0;
+    appelsin = 0;
+    uppdatekassa()
+    uppdateantal()
+}
