@@ -14,6 +14,14 @@ function uppdatekassa(){
     (salad* 10.5)+ 
     (margarin*25.5)).toFixed(2)
 }
+function uppdateantal() {
+    document.getElementById("antalägg").textContent = 'Antal ägg: ' + egg + 'kg'
+    document.getElementById("antalappelsiner").textContent = 'Antal appelsiner: ' + appelsin + 'kg'
+    document.getElementById("antalmajs").textContent = 'Antal majs: ' + majs
+    document.getElementById("antalfläsk").textContent = 'Antal fläsk: ' + flesk
+    document.getElementById("antalsalad").textContent = 'Antal salad: ' + salad
+    document.getElementById("antalbakmargarin").textContent = 'Antal bakmargarin: ' + margarin + 'kg'
+}
 
 kassadrop = () => {
     let v = document.getElementById("dropdownkassa")
@@ -28,31 +36,38 @@ legtillegg = () => {
     let v = document.getElementById("egg").textContent;
     egg += Number(v);
     uppdatekassa()
+    uppdateantal()
+    
 }
 legtillappelsin = () => {
     let v = document.getElementById("appelsin").textContent;
     appelsin += Number(v);
     uppdatekassa()
+    uppdateantal() 
 }
 legtillmajs = () => {
     let v = document.getElementById("majs").textContent;
     majs += Number(v);
     uppdatekassa()
+    uppdateantal() 
 }
 legtillflesk = () => {
     let v = document.getElementById("fläsk").textContent;
     flesk += Number(v);
     uppdatekassa()
+    uppdateantal() 
 }
 legtillsalad = () => {
     let v = document.getElementById("salad").textContent;
     salad += Number(v);
     uppdatekassa()
+    uppdateantal() 
 }
 legtillbm = () => {
     let v = document.getElementById("bakmargarin").textContent;
     margarin += Number(v);
     uppdatekassa()
+    uppdateantal() 
 }
 
 //öka eller förminska funktioner
