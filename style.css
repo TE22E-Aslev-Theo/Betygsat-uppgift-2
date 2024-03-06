@@ -438,6 +438,12 @@
         background-color: white;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .valknappar button{
+        width: 2vw;
+    }
+    .valknappar h3{
+        font-size: 1.2rem;
+    }
     #legtillegg{
         width: 5vw;
         margin-left: 3vw;
